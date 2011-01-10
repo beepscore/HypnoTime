@@ -24,6 +24,12 @@
     // Give it a label
     [tbi setTitle:@"Time"];
     
+    // Create a UIImage from a file
+    UIImage *i = [UIImage imageNamed:@"Time.png"];
+    
+    // Put that image on the tab bar item
+    [tbi setImage:i];
+    
     return self;
 }
 

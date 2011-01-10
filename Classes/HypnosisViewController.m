@@ -24,6 +24,12 @@
     // Give it a label
     [tbi setTitle:@"Hypnosis"];
     
+    // Create a UIImage from a file
+    UIImage *i = [UIImage imageNamed:@"Hypno.png"];
+    
+    // Put that image on the tab bar item
+    [tbi setImage:i];
+    
     return self;
 }
 
