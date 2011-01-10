@@ -7,7 +7,7 @@
 //
 
 #import "HypnosisViewController.h"
-
+#import "HypnosisView.h"
 
 @implementation HypnosisViewController
 
@@ -41,15 +41,22 @@
     return [self init];
 }
 
+- (void)loadView
+{
+    HypnosisView *hv = [[HypnosisView alloc] initWithFrame:CGRectZero];
+    [hv setBackgroundColor:[UIColor whiteColor]];
+    // view is a retained property of UIViewController
+    [self setView:hv];
+    [hv release];
+}
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 // This method gets called automatically when the view is created
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Set the background color of the view so we can see it
-    [[self view] setBackgroundColor:[UIColor orangeColor]];
+
 }
 
 

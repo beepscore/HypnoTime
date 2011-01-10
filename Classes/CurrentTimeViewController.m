@@ -48,8 +48,7 @@
 {
     [super viewDidLoad];
     
-    // Set the background color of the view so we can see it
-    [[self view] setBackgroundColor:[UIColor greenColor]];
+
 }
 
 
