@@ -11,23 +11,41 @@
 
 @implementation CurrentTimeViewController
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
+// Designated initializer
+- (id)init
+{
+    // Call the superclass's designated initializer
+    [super initWithNibName:nil
+                    bundle:nil];
+    
+    // Get the tab bar item
+    UITabBarItem *tbi = [self tabBarItem];
+    
+    // Give it a label
+    [tbi setTitle:@"Time"];
+    
     return self;
 }
-*/
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
+
+// Override superclass's designated initializer
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    // Disregard parameters - nib name is an implementation detail
+    return [self init];
 }
-*/
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+// This method gets called automatically when the view is created
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // Set the background color of the view so we can see it
+    [[self view] setBackgroundColor:[UIColor greenColor]];
+}
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

@@ -12,5 +12,7 @@
 @interface CurrentTimeViewController : UIViewController {
 
 }
+// Designated initializer
+- (id)init;
 
 @end

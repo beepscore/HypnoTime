@@ -1,4 +1,4 @@
-    //
+//
 //  HypnosisViewController.m
 //  HypnoTime
 //
@@ -11,37 +11,49 @@
 
 @implementation HypnosisViewController
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
+// Designated initializer
+- (id)init
+{
+    // Call the superclass's designated initializer
+    [super initWithNibName:nil
+                    bundle:nil];
+    
+    // Get the tab bar item
+    UITabBarItem *tbi = [self tabBarItem];
+    
+    // Give it a label
+    [tbi setTitle:@"Hypnosis"];
+    
     return self;
 }
-*/
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
+
+// Override superclass's designated initializer
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    // Disregard parameters - nib name is an implementation detail
+    return [self init];
 }
-*/
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
+// This method gets called automatically when the view is created
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    
+    // Set the background color of the view so we can see it
+    [[self view] setBackgroundColor:[UIColor orangeColor]];
 }
-*/
+
 
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations.
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

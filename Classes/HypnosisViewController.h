@@ -12,5 +12,7 @@
 @interface HypnosisViewController : UIViewController {
 
 }
+// Designated initializer
+- (id)init;
 
 @end
