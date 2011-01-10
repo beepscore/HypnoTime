@@ -48,7 +48,7 @@
 {
     [super viewDidLoad];
     
-
+    [self showCurrentTime:nil];
 }
 
 
@@ -67,14 +67,20 @@
     // Release any cached data, images, etc. that aren't in use.
 }
 
-- (void)viewDidUnload {
+- (void)viewDidUnload
+{
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    NSLog(@"Must have received a low-memory warning.  Releasing timeLabel");
+    [timeLabel release];
+    timeLabel = nil;
 }
 
 
-- (void)dealloc {
+- (void)dealloc
+{
+    [timeLabel release];
     [super dealloc];
 }
 
