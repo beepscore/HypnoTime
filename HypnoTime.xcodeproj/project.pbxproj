@@ -17,6 +17,9 @@
 		DED0C79112DA8A1C004C1132 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = DED0C79012DA8A1C004C1132 /* HypnosisView.m */; };
 		DED0C79412DA8A7C004C1132 /* Hypno.png in Resources */ = {isa = PBXBuildFile; fileRef = DED0C79312DA8A7C004C1132 /* Hypno.png */; };
 		DED0C79612DA8A83004C1132 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = DED0C79512DA8A83004C1132 /* Time.png */; };
+		DED79B2012DA8DAD0038CBD2 /* CurrentTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED79B1E12DA8DAD0038CBD2 /* CurrentTimeViewController.m */; };
+		DED79B2112DA8DAD0038CBD2 /* CurrentTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED79B1F12DA8DAD0038CBD2 /* CurrentTimeViewController.xib */; };
+		DED79B2912DA8DE30038CBD2 /* HypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED79B2812DA8DE30038CBD2 /* HypnosisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,11 @@
 		DED0C79012DA8A1C004C1132 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
 		DED0C79312DA8A7C004C1132 /* Hypno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hypno.png; sourceTree = "<group>"; };
 		DED0C79512DA8A83004C1132 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		DED79B1D12DA8DAD0038CBD2 /* CurrentTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentTimeViewController.h; sourceTree = "<group>"; };
+		DED79B1E12DA8DAD0038CBD2 /* CurrentTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentTimeViewController.m; sourceTree = "<group>"; };
+		DED79B1F12DA8DAD0038CBD2 /* CurrentTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentTimeViewController.xib; sourceTree = "<group>"; };
+		DED79B2712DA8DE30038CBD2 /* HypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisViewController.h; sourceTree = "<group>"; };
+		DED79B2812DA8DE30038CBD2 /* HypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +62,15 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* HypnoTimeAppDelegate.h */,
-				1D3623250D0F684500981E51 /* HypnoTimeAppDelegate.m */,
+				DED79B1D12DA8DAD0038CBD2 /* CurrentTimeViewController.h */,
+				DED79B1E12DA8DAD0038CBD2 /* CurrentTimeViewController.m */,
+				DED79B1F12DA8DAD0038CBD2 /* CurrentTimeViewController.xib */,
 				DED0C78F12DA8A1C004C1132 /* HypnosisView.h */,
 				DED0C79012DA8A1C004C1132 /* HypnosisView.m */,
+				DED79B2712DA8DE30038CBD2 /* HypnosisViewController.h */,
+				DED79B2812DA8DE30038CBD2 /* HypnosisViewController.m */,
+				1D3623240D0F684500981E51 /* HypnoTimeAppDelegate.h */,
+				1D3623250D0F684500981E51 /* HypnoTimeAppDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -166,6 +179,7 @@
 				DE228C7112A375A5004B7282 /* README in Resources */,
 				DED0C79412DA8A7C004C1132 /* Hypno.png in Resources */,
 				DED0C79612DA8A83004C1132 /* Time.png in Resources */,
+				DED79B2112DA8DAD0038CBD2 /* CurrentTimeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +193,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* HypnoTimeAppDelegate.m in Sources */,
 				DED0C79112DA8A1C004C1132 /* HypnosisView.m in Sources */,
+				DED79B2012DA8DAD0038CBD2 /* CurrentTimeViewController.m in Sources */,
+				DED79B2912DA8DE30038CBD2 /* HypnosisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
