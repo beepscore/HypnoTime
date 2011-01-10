@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CurrentTimeViewController : UIViewController {
-
+@interface CurrentTimeViewController : UIViewController
+{
+    IBOutlet UILabel *timeLabel;
 }
 // Designated initializer
 - (id)init;
+
+- (IBAction)showCurrentTime:(id)sender;
 
 @end

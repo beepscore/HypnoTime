@@ -15,7 +15,7 @@
 - (id)init
 {
     // Call the superclass's designated initializer
-    [super initWithNibName:nil
+    [super initWithNibName:@"CurrentTimeViewController"
                     bundle:nil];
     
     // Get the tab bar item
@@ -78,5 +78,16 @@
     [super dealloc];
 }
 
+- (IBAction)showCurrentTime:(id)sender
+{
+    NSDate *now = [NSDate date];
+    static NSDateFormatter *formatter = nil;
+    if (!formatter)
+    {
+        formatter = [[NSDateFormatter alloc] init];
+        [formatter setTimeStyle:NSDateFormatterShortStyle];
+    }
+    [timeLabel setText:[formatter stringFromDate:now]];
+}
 
 @end
