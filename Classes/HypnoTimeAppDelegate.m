@@ -20,6 +20,13 @@
     
     // Override point for customization after application launch.
     
+    // Create the tabBarController
+    tabBarController = [[UITabBarController alloc] init];
+    
+    // Put the tabBarController's view on the window
+    [window addSubview:[tabBarController view]];
+    
+    // Show the window
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -74,7 +81,9 @@
 }
 
 
-- (void)dealloc {
+- (void)dealloc
+{
+    [tabBarController release];
     [window release];
     [super dealloc];
 }
